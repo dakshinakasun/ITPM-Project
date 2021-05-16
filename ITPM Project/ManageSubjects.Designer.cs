@@ -31,6 +31,7 @@ namespace ITPM_Project
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageSubjects));
             this.panelHeadding = new System.Windows.Forms.Panel();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.labelHeadingManageLecturers = new System.Windows.Forms.Label();
             this.panelManageSubject = new System.Windows.Forms.Panel();
             this.textSubjectID = new System.Windows.Forms.TextBox();
@@ -56,15 +57,14 @@ namespace ITPM_Project
             this.lblSubjectCode = new System.Windows.Forms.Label();
             this.comboBoxOfferdYear = new System.Windows.Forms.ComboBox();
             this.lblOfferedYear = new System.Windows.Forms.Label();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panelHeadding.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.panelManageSubject.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubjects)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfLabHour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfEvaluHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpNoOfLecHour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfTuteHour)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeadding
@@ -77,6 +77,18 @@ namespace ITPM_Project
             this.panelHeadding.Name = "panelHeadding";
             this.panelHeadding.Size = new System.Drawing.Size(925, 80);
             this.panelHeadding.TabIndex = 2;
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
+            this.pictureBoxClose.Location = new System.Drawing.Point(888, 3);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(25, 20);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 80;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // labelHeadingManageLecturers
             // 
@@ -395,18 +407,6 @@ namespace ITPM_Project
             this.lblOfferedYear.TabIndex = 62;
             this.lblOfferedYear.Text = "Offered Year";
             // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
-            this.pictureBoxClose.Location = new System.Drawing.Point(888, 3);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(25, 20);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxClose.TabIndex = 80;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
-            // 
             // ManageSubjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -422,6 +422,7 @@ namespace ITPM_Project
             this.Load += new System.EventHandler(this.ManageSubjects_Load);
             this.panelHeadding.ResumeLayout(false);
             this.panelHeadding.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.panelManageSubject.ResumeLayout(false);
             this.panelManageSubject.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubjects)).EndInit();
@@ -429,7 +430,6 @@ namespace ITPM_Project
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfEvaluHours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpNoOfLecHour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfTuteHour)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.ResumeLayout(false);
 
         }

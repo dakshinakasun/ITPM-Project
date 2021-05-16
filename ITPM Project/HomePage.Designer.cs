@@ -31,6 +31,10 @@ namespace ITPM_Project
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.panelSide = new System.Windows.Forms.Panel();
+            this.panelSession = new System.Windows.Forms.Panel();
+            this.btnManageSession = new System.Windows.Forms.Button();
+            this.btnAddSession = new System.Windows.Forms.Button();
+            this.btnSession = new System.Windows.Forms.Button();
             this.btnVisualizationStatistics = new System.Windows.Forms.Button();
             this.panelLocatons = new System.Windows.Forms.Panel();
             this.btnManageLocations = new System.Windows.Forms.Button();
@@ -66,6 +70,7 @@ namespace ITPM_Project
             this.panelPages = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSide.SuspendLayout();
+            this.panelSession.SuspendLayout();
             this.panelLocatons.SuspendLayout();
             this.panelBuildings.SuspendLayout();
             this.panelWorkingDaysAndHours.SuspendLayout();
@@ -83,6 +88,8 @@ namespace ITPM_Project
             // 
             this.panelSide.AutoScroll = true;
             this.panelSide.BackColor = System.Drawing.Color.Black;
+            this.panelSide.Controls.Add(this.panelSession);
+            this.panelSide.Controls.Add(this.btnSession);
             this.panelSide.Controls.Add(this.btnVisualizationStatistics);
             this.panelSide.Controls.Add(this.panelLocatons);
             this.panelSide.Controls.Add(this.btnLocations);
@@ -105,6 +112,81 @@ namespace ITPM_Project
             this.panelSide.Name = "panelSide";
             this.panelSide.Size = new System.Drawing.Size(280, 653);
             this.panelSide.TabIndex = 0;
+            // 
+            // panelSession
+            // 
+            this.panelSession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelSession.Controls.Add(this.btnManageSession);
+            this.panelSession.Controls.Add(this.btnAddSession);
+            this.panelSession.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSession.Location = new System.Drawing.Point(0, 1114);
+            this.panelSession.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelSession.Name = "panelSession";
+            this.panelSession.Size = new System.Drawing.Size(259, 74);
+            this.panelSession.TabIndex = 19;
+            // 
+            // btnManageSession
+            // 
+            this.btnManageSession.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManageSession.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnManageSession.FlatAppearance.BorderSize = 0;
+            this.btnManageSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageSession.ForeColor = System.Drawing.Color.LightGray;
+            this.btnManageSession.Image = ((System.Drawing.Image)(resources.GetObject("btnManageSession.Image")));
+            this.btnManageSession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManageSession.Location = new System.Drawing.Point(0, 35);
+            this.btnManageSession.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnManageSession.Name = "btnManageSession";
+            this.btnManageSession.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnManageSession.Size = new System.Drawing.Size(259, 35);
+            this.btnManageSession.TabIndex = 1;
+            this.btnManageSession.Text = " Manage Session";
+            this.btnManageSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManageSession.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnManageSession.UseVisualStyleBackColor = true;
+            this.btnManageSession.Click += new System.EventHandler(this.btnManageSession_Click);
+            // 
+            // btnAddSession
+            // 
+            this.btnAddSession.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddSession.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddSession.FlatAppearance.BorderSize = 0;
+            this.btnAddSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSession.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAddSession.Image = ((System.Drawing.Image)(resources.GetObject("btnAddSession.Image")));
+            this.btnAddSession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddSession.Location = new System.Drawing.Point(0, 0);
+            this.btnAddSession.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAddSession.Name = "btnAddSession";
+            this.btnAddSession.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnAddSession.Size = new System.Drawing.Size(259, 35);
+            this.btnAddSession.TabIndex = 0;
+            this.btnAddSession.Text = " Add Session";
+            this.btnAddSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddSession.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddSession.UseVisualStyleBackColor = true;
+            this.btnAddSession.Click += new System.EventHandler(this.btnAddSession_Click);
+            // 
+            // btnSession
+            // 
+            this.btnSession.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSession.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSession.FlatAppearance.BorderSize = 0;
+            this.btnSession.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSession.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSession.Image = ((System.Drawing.Image)(resources.GetObject("btnSession.Image")));
+            this.btnSession.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSession.Location = new System.Drawing.Point(0, 1069);
+            this.btnSession.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSession.Name = "btnSession";
+            this.btnSession.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnSession.Size = new System.Drawing.Size(259, 45);
+            this.btnSession.TabIndex = 18;
+            this.btnSession.Text = "Session";
+            this.btnSession.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSession.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSession.UseVisualStyleBackColor = true;
+            this.btnSession.Click += new System.EventHandler(this.btnSession_Click);
             // 
             // btnVisualizationStatistics
             // 
@@ -723,6 +805,7 @@ namespace ITPM_Project
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Timetable Management System";
             this.panelSide.ResumeLayout(false);
+            this.panelSession.ResumeLayout(false);
             this.panelLocatons.ResumeLayout(false);
             this.panelBuildings.ResumeLayout(false);
             this.panelWorkingDaysAndHours.ResumeLayout(false);
@@ -775,6 +858,10 @@ namespace ITPM_Project
         private System.Windows.Forms.Button btnAddLocation;
         private System.Windows.Forms.Button btnLocations;
         private System.Windows.Forms.Button btnVisualizationStatistics;
+        private System.Windows.Forms.Panel panelSession;
+        private System.Windows.Forms.Button btnManageSession;
+        private System.Windows.Forms.Button btnAddSession;
+        private System.Windows.Forms.Button btnSession;
     }
 }
 

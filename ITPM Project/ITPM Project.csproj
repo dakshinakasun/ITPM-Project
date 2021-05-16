@@ -53,6 +53,12 @@
     <Compile Include="Add Lecturer.Designer.cs">
       <DependentUpon>Add Lecturer.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSession.Designer.cs">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddSubject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,7 @@
       <DependentUpon>AddSubject.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\LecturerClass.cs" />
+    <Compile Include="Classes\SessionClass.cs" />
     <Compile Include="Classes\SubjectClass.cs" />
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -73,6 +80,12 @@
     <Compile Include="ManageLecturers.Designer.cs">
       <DependentUpon>ManageLecturers.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSession.Designer.cs">
+      <DependentUpon>ManageSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageSubjects.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +97,9 @@
     <EmbeddedResource Include="Add Lecturer.resx">
       <DependentUpon>Add Lecturer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddSession.resx">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddSubject.resx">
       <DependentUpon>AddSubject.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageLecturers.resx">
       <DependentUpon>ManageLecturers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSession.resx">
+      <DependentUpon>ManageSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageSubjects.resx">
       <DependentUpon>ManageSubjects.cs</DependentUpon>

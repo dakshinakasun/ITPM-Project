@@ -27,6 +27,7 @@ namespace ITPM_Project
             panelWorkingDaysAndHours.Visible = false;
             panelBuildings.Visible = false;
             panelLocatons.Visible = false;
+            panelSession.Visible = false;
         }
 
         private void hideSubmenu()
@@ -51,6 +52,10 @@ namespace ITPM_Project
 
             if (panelLocatons.Visible == true)
                 panelLocatons.Visible = false;
+
+            if (panelSession.Visible == true)
+                panelSession.Visible = false;
+
 
         }
 
@@ -139,6 +144,23 @@ namespace ITPM_Project
 
         }
 
+        //............... Session Panel Buttons ...........................
+        private void btnSession_Click(object sender, EventArgs e)
+        {
+            showSubmenu(panelSession);
+        }
+
+        private void btnAddSession_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AddSession());
+            hideSubmenu();
+        }
+
+        private void btnManageSession_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ManageSession());
+            hideSubmenu();
+        }
 
 
         //............Child Form............

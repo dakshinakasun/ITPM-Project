@@ -59,8 +59,8 @@ namespace ITPM_Project
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelHeadingManageLecturers = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+            this.labelHeadingManageLecturers = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLecturers)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -394,11 +394,11 @@ namespace ITPM_Project
             this.dataGridViewLecturers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewLecturers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLecturers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataGridViewLecturers.Location = new System.Drawing.Point(61, 326);
+            this.dataGridViewLecturers.Location = new System.Drawing.Point(61, 347);
             this.dataGridViewLecturers.Name = "dataGridViewLecturers";
             this.dataGridViewLecturers.RowHeadersWidth = 51;
             this.dataGridViewLecturers.RowTemplate.Height = 24;
-            this.dataGridViewLecturers.Size = new System.Drawing.Size(818, 221);
+            this.dataGridViewLecturers.Size = new System.Drawing.Size(818, 195);
             this.dataGridViewLecturers.TabIndex = 76;
             this.dataGridViewLecturers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewLecturers_RowHeaderMouseClick_1);
             // 
@@ -461,6 +461,18 @@ namespace ITPM_Project
             this.panel1.Size = new System.Drawing.Size(925, 80);
             this.panel1.TabIndex = 78;
             // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
+            this.pictureBoxClose.Location = new System.Drawing.Point(888, 4);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(25, 20);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 80;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
+            // 
             // labelHeadingManageLecturers
             // 
             this.labelHeadingManageLecturers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -473,18 +485,6 @@ namespace ITPM_Project
             this.labelHeadingManageLecturers.Size = new System.Drawing.Size(536, 76);
             this.labelHeadingManageLecturers.TabIndex = 3;
             this.labelHeadingManageLecturers.Text = "Manage Lecturers";
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
-            this.pictureBoxClose.Location = new System.Drawing.Point(888, 4);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(25, 20);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxClose.TabIndex = 80;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // ManageLecturers
             // 
