@@ -1,7 +1,7 @@
 ﻿
 namespace Time_Table_Management
 {
-    partial class Form3
+    partial class TimeSlots
     {
         /// <summary>
         /// Required designer variable.
@@ -90,9 +90,9 @@ namespace Time_Table_Management
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(649, 459);
+            this.button3.Location = new System.Drawing.Point(661, 450);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(233, 60);
+            this.button3.Size = new System.Drawing.Size(203, 60);
             this.button3.TabIndex = 32;
             this.button3.Text = "Remove Slot";
             this.button3.UseVisualStyleBackColor = false;
@@ -101,10 +101,10 @@ namespace Time_Table_Management
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(64, 438);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(38, 438);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 23);
+            this.label7.Size = new System.Drawing.Size(128, 28);
             this.label7.TabIndex = 34;
             this.label7.Text = "Starting Time";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -112,10 +112,10 @@ namespace Time_Table_Management
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(65, 485);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(38, 482);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 23);
+            this.label8.Size = new System.Drawing.Size(120, 28);
             this.label8.TabIndex = 35;
             this.label8.Text = "Ending Time";
             // 
@@ -128,7 +128,7 @@ namespace Time_Table_Management
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(452, 459);
+            this.button1.Location = new System.Drawing.Point(474, 450);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 60);
             this.button1.TabIndex = 40;
@@ -153,10 +153,10 @@ namespace Time_Table_Management
             // 
             this.radioButtononehour.AutoSize = true;
             this.radioButtononehour.Checked = true;
-            this.radioButtononehour.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtononehour.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtononehour.Location = new System.Drawing.Point(16, 29);
             this.radioButtononehour.Name = "radioButtononehour";
-            this.radioButtononehour.Size = new System.Drawing.Size(135, 27);
+            this.radioButtononehour.Size = new System.Drawing.Size(156, 32);
             this.radioButtononehour.TabIndex = 42;
             this.radioButtononehour.TabStop = true;
             this.radioButtononehour.Text = "One Hour Slot";
@@ -165,10 +165,10 @@ namespace Time_Table_Management
             // radioButton30min
             // 
             this.radioButton30min.AutoSize = true;
-            this.radioButton30min.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton30min.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton30min.Location = new System.Drawing.Point(240, 28);
             this.radioButton30min.Name = "radioButton30min";
-            this.radioButton30min.Size = new System.Drawing.Size(137, 27);
+            this.radioButton30min.Size = new System.Drawing.Size(158, 32);
             this.radioButton30min.TabIndex = 43;
             this.radioButton30min.TabStop = true;
             this.radioButton30min.Text = "30 Minute Slot";
@@ -190,25 +190,25 @@ namespace Time_Table_Management
             this.idtext.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idtext.Location = new System.Drawing.Point(661, 367);
             this.idtext.Name = "idtext";
-            this.idtext.Size = new System.Drawing.Size(222, 30);
+            this.idtext.Size = new System.Drawing.Size(181, 30);
             this.idtext.TabIndex = 46;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(495, 371);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 23);
+            this.label10.Size = new System.Drawing.Size(116, 28);
             this.label10.TabIndex = 45;
             this.label10.Text = "Enter Slot Id";
             // 
-            // Form3
+            // TimeSlots
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(916, 553);
+            this.ClientSize = new System.Drawing.Size(902, 553);
             this.Controls.Add(this.idtext);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tsdgv);
@@ -220,7 +220,7 @@ namespace Time_Table_Management
             this.Controls.Add(this.dateTimeFromPicker);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form3";
+            this.Name = "TimeSlots";
             this.Text = "Add New Time Slot Form";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tsdgv)).EndInit();

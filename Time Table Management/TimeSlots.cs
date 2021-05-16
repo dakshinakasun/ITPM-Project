@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Time_Table_Management
 {
-    public partial class Form3 : Form
+    public partial class TimeSlots : Form
     {
-        public Form3()
+        public TimeSlots()
         {
             InitializeComponent();
         }

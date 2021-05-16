@@ -19,13 +19,37 @@ namespace Time_Table_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 wd = new Form1();
+            WorkingDays wd = new WorkingDays();
             wd.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 ts = new Form3();
+            TimeSlots ts = new TimeSlots();
+            ts.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SessionManager ts = new SessionManager();
+            ts.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            StudentManager ts = new StudentManager();
+            ts.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            NonReservable ts = new NonReservable();
+            ts.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            PreferredSessions ts = new PreferredSessions();
             ts.Show();
         }
     }

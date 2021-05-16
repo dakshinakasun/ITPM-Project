@@ -15,14 +15,14 @@ using System.Windows.Forms;
 
 namespace Time_Table_Management
 {
-    public partial class Form1 : Form
+    public partial class WorkingDays : Form
 
         
     {
         int selected_days = 0;
         List<string> dayslist = new List<string>();
 
-        public Form1()
+        public WorkingDays()
         {
             InitializeComponent();
 
@@ -109,7 +109,7 @@ namespace Time_Table_Management
             else
             {
 
-                Form2 edit = new Form2(idtext.Text.ToString());
+                UpdateWorkingDays edit = new UpdateWorkingDays(idtext.Text.ToString());
                 edit.FormClosed += Edit_FormClosed;
                 edit.Show();
             }
@@ -238,7 +238,7 @@ namespace Time_Table_Management
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedIndex = 1;
             RefreshData();
          //   dgv.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.Fill);
 
@@ -298,8 +298,20 @@ namespace Time_Table_Management
 
                 connection.Close();
                 RefreshData();
-
+                MessageBox.Show("Working Days Added Successfully");
+                clear();
             }
+        }
+
+        void clear()
+        {
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+            checkBox7.Checked = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -387,8 +399,18 @@ namespace Time_Table_Management
         private void button5_Click(object sender, EventArgs e)
         {
 
-            Form3 ts = new Form3();
+            TimeSlots ts = new TimeSlots();
             ts.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }

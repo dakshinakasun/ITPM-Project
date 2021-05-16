@@ -12,13 +12,13 @@ using System.Windows.Forms;
 
 namespace Time_Table_Management
 {
-    public partial class Form2 : Form
+    public partial class UpdateWorkingDays : Form
     {
         int selected_days = 0;
         List<string> dayslist = new List<string>();
         int idnum;
 
-        public Form2(string id)
+        public UpdateWorkingDays(string id)
         {
 
             InitializeComponent();
