@@ -33,5 +33,16 @@ namespace Time_Table_Management.Properties {
                 return ((string)(this["workingdaysConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=itpmsqldatabase.database.windows.net;Initial Catalog=ITPM;User ID=itp" +
+            "m;Password=kasun123.")]
+        public string ITPMConnectionString {
+            get {
+                return ((string)(this["ITPMConnectionString"]));
+            }
+        }
     }
 }

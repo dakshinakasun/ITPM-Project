@@ -61,13 +61,13 @@ namespace Time_Table_Management
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(12, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(878, 61);
             this.label2.TabIndex = 55;
-            this.label2.Text = "PREFERRED SESSION";
+            this.label2.Text = "PREFERRED SESSIONS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -366,7 +366,7 @@ namespace Time_Table_Management
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tabControl1);
             this.Name = "PreferredSessions";
-            this.Text = "Add a Session Preferred Starting Time and Day Form";
+            this.Text = "Preferred Sessions";
             this.Load += new System.EventHandler(this.PreferredSessions_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

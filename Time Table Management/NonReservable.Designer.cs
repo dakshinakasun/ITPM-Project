@@ -123,7 +123,7 @@ namespace Time_Table_Management
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(15, 9);
             this.label2.Name = "label2";
@@ -334,7 +334,7 @@ namespace Time_Table_Management
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tabControl1);
             this.Name = "NonReservable";
-            this.Text = "Room Cannot be Reserved Form";
+            this.Text = "Non Reservable Times";
             this.Load += new System.EventHandler(this.NonReservable_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

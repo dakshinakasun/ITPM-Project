@@ -27,6 +27,7 @@ namespace Time_Table_Management
             InitializeComponent();
 
             numericUpDown1.Value = selected_days;
+            panel1.Location = new Point(0, 0);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -109,14 +110,26 @@ namespace Time_Table_Management
             else
             {
 
-                UpdateWorkingDays edit = new UpdateWorkingDays(idtext.Text.ToString());
-                edit.FormClosed += Edit_FormClosed;
-                edit.Show();
+                //UpdateWorkingDays edit = new UpdateWorkingDays(idtext.Text.ToString());
+                //edit.FormClosed += Edit_FormClosed;
+                //edit.Show();
+
+                UpdateWorkingDays myForm = new UpdateWorkingDays(idtext.Text.ToString());
+
+                myForm.FormClosed += Edit_FormClosed;
+                myForm.TopLevel = false;
+                myForm.AutoScroll = true;
+                panel1.Controls.Add(myForm);
+                panel1.Visible = true;
+                myForm.Show();
+
+
             }
         }
         private void Edit_FormClosed(object sender, FormClosedEventArgs e)
         {
             RefreshData();
+            panel1.Visible = false;
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

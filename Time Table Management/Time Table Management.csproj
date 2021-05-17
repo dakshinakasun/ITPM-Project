@@ -65,6 +65,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ITPMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="WorkingDays.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +158,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ITPMDataSet.xsc">
+      <DependentUpon>ITPMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet.xss">
+      <DependentUpon>ITPMDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

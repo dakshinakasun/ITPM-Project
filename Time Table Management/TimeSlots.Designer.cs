@@ -48,13 +48,13 @@ namespace Time_Table_Management
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(2, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(912, 72);
             this.label2.TabIndex = 1;
-            this.label2.Text = "ADD NEW TIME SLOT";
+            this.label2.Text = "ADD / MANAGE TIME SLOTS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -221,7 +221,7 @@ namespace Time_Table_Management
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Name = "TimeSlots";
-            this.Text = "Add New Time Slot Form";
+            this.Text = "Manage Time Slots";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tsdgv)).EndInit();
             this.groupBox1.ResumeLayout(false);

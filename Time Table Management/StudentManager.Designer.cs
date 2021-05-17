@@ -300,7 +300,7 @@ namespace Time_Table_Management
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Name = "label1";
@@ -319,7 +319,7 @@ namespace Time_Table_Management
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "StudentManager";
-            this.Text = "Allocate Not Available Time Of Student Groups";
+            this.Text = "Student Groups Manager";
             this.Load += new System.EventHandler(this.StudentManager_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

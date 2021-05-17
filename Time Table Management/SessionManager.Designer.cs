@@ -59,7 +59,7 @@ namespace Time_Table_Management
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 73);
+            this.label2.Location = new System.Drawing.Point(40, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 28);
             this.label2.TabIndex = 1;
@@ -69,7 +69,7 @@ namespace Time_Table_Management
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 153);
+            this.label4.Location = new System.Drawing.Point(40, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 28);
             this.label4.TabIndex = 3;
@@ -78,7 +78,7 @@ namespace Time_Table_Management
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 245);
+            this.label5.Location = new System.Drawing.Point(40, 247);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(160, 28);
             this.label5.TabIndex = 4;
@@ -92,7 +92,7 @@ namespace Time_Table_Management
             "Y2S1G1",
             "Y3S1G1",
             "Y4S1G1"});
-            this.groupDrop.Location = new System.Drawing.Point(228, 150);
+            this.groupDrop.Location = new System.Drawing.Point(250, 152);
             this.groupDrop.Name = "groupDrop";
             this.groupDrop.Size = new System.Drawing.Size(206, 36);
             this.groupDrop.TabIndex = 8;
@@ -113,7 +113,7 @@ namespace Time_Table_Management
             "Y4S1 G1.1",
             "Y4S1 G1.2",
             "Y4S1 G1.3"});
-            this.subDrop.Location = new System.Drawing.Point(228, 245);
+            this.subDrop.Location = new System.Drawing.Point(250, 247);
             this.subDrop.Name = "subDrop";
             this.subDrop.Size = new System.Drawing.Size(206, 36);
             this.subDrop.TabIndex = 9;
@@ -122,7 +122,7 @@ namespace Time_Table_Management
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(503, 168);
+            this.label8.Location = new System.Drawing.Point(503, 160);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 28);
             this.label8.TabIndex = 47;
@@ -132,7 +132,7 @@ namespace Time_Table_Management
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(503, 114);
+            this.label9.Location = new System.Drawing.Point(503, 79);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 28);
             this.label9.TabIndex = 46;
@@ -143,7 +143,7 @@ namespace Time_Table_Management
             this.dateTimeToPicker.CustomFormat = "hh:mm";
             this.dateTimeToPicker.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeToPicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimeToPicker.Location = new System.Drawing.Point(620, 168);
+            this.dateTimeToPicker.Location = new System.Drawing.Point(632, 158);
             this.dateTimeToPicker.Name = "dateTimeToPicker";
             this.dateTimeToPicker.ShowUpDown = true;
             this.dateTimeToPicker.Size = new System.Drawing.Size(182, 30);
@@ -155,7 +155,7 @@ namespace Time_Table_Management
             this.dateTimeFromPicker.CustomFormat = "hh:mm";
             this.dateTimeFromPicker.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeFromPicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimeFromPicker.Location = new System.Drawing.Point(620, 116);
+            this.dateTimeFromPicker.Location = new System.Drawing.Point(632, 79);
             this.dateTimeFromPicker.Name = "dateTimeFromPicker";
             this.dateTimeFromPicker.ShowUpDown = true;
             this.dateTimeFromPicker.Size = new System.Drawing.Size(182, 30);
@@ -164,7 +164,7 @@ namespace Time_Table_Management
             // lecText
             // 
             this.lecText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lecText.Location = new System.Drawing.Point(228, 75);
+            this.lecText.Location = new System.Drawing.Point(250, 77);
             this.lecText.Name = "lecText";
             this.lecText.Size = new System.Drawing.Size(206, 30);
             this.lecText.TabIndex = 48;
@@ -322,7 +322,7 @@ namespace Time_Table_Management
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(-6, 13);
             this.label1.Name = "label1";
@@ -341,7 +341,7 @@ namespace Time_Table_Management
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "SessionManager";
-            this.Text = "Sessions and Not Available Time Allocations";
+            this.Text = "Session Manager";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

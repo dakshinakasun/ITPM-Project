@@ -23,6 +23,7 @@ namespace Time_Table_Management
 
             InitializeComponent();
             label1.Text = "Updating Working Time on Record " + id;
+            label1.Text = label1.Text.ToUpper();
             idnum = Int32.Parse(id);
         }
 
@@ -38,7 +39,7 @@ namespace Time_Table_Management
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -205,8 +206,14 @@ namespace Time_Table_Management
             cmd.ExecuteNonQuery();
 
             connection.Close();
+            
             this.Close();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
