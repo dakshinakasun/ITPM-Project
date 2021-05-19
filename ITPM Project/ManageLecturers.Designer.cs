@@ -261,12 +261,10 @@ namespace ITPM_Project
             // 
             this.textBoxLectureID.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxLectureID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxLectureID.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBoxLectureID.Enabled = false;
+            this.textBoxLectureID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxLectureID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLectureID.Location = new System.Drawing.Point(163, 83);
             this.textBoxLectureID.Name = "textBoxLectureID";
-            this.textBoxLectureID.ReadOnly = true;
             this.textBoxLectureID.Size = new System.Drawing.Size(191, 30);
             this.textBoxLectureID.TabIndex = 66;
             // 
@@ -390,7 +388,7 @@ namespace ITPM_Project
             // 
             this.dataGridViewLecturers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewLecturers.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridViewLecturers.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewLecturers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewLecturers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLecturers.Cursor = System.Windows.Forms.Cursors.Hand;

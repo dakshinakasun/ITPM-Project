@@ -199,8 +199,8 @@ namespace ITPM_Project
             {
 
                 //get the value from the inpute fileds
-                se.Lecture1Name = comboBoxLecture1.Text;
-                se.Lecture2Name = comboBoxLecturer2.Text;
+                se.FirstLectureName = comboBoxLecture1.Text;
+                se.SecondLectureName = comboBoxLecturer2.Text;
                 se.Tag = comboBoxSelectTag.Text;
                 se.StudentGroup = comboBoxSelectGroup.Text;
                 se.StudentSubGroup = comboBoxSelectSubGroup.Text;

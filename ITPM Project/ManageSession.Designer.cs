@@ -326,7 +326,7 @@ namespace ITPM_Project
             // 
             // dataGridViewSessions
             // 
-            this.dataGridViewSessions.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridViewSessions.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewSessions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSessions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridViewSessions.Location = new System.Drawing.Point(34, 225);

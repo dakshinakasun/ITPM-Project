@@ -13,8 +13,8 @@ namespace ITPM_Project.Classes
     {
         //..............Getters and setters properties....................
         public int SessionID { get; set; }
-        public string Lecture1Name { get; set; }
-        public string Lecture2Name { get; set; }
+        public string FirstLectureName { get; set; }
+        public string SecondLectureName { get; set; }
         public string Tag { get; set; }
         public string StudentGroup { get; set; }
         public string StudentSubGroup { get; set; }
@@ -62,12 +62,12 @@ namespace ITPM_Project.Classes
             try
             {
                 //Step 2: create a sql query to insert data
-                string sql = "INSERT INTO Session (Lecture1Name, Lecture2Name, Tag, StudentGroup, StudentSubGroup, Subject, Duration, NoOfStudents) VALUES (@Lecture1Name, @Lecture2Name, @Tag, @StudentGroup, @StudentSubGroup, @Subject, @Duration, @NoOfStudents)";
+                string sql = "INSERT INTO Session (FirstLectureName, SecondLectureName, Tag, StudentGroup, StudentSubGroup, Subject, Duration, NoOfStudents) VALUES (@FirstLectureName, @SecondLectureName, @Tag, @StudentGroup, @StudentSubGroup, @Subject, @Duration, @NoOfStudents)";
                 //creating sql commend using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //Creat parameter to add data
-                cmd.Parameters.AddWithValue("@Lecture1Name", se.Lecture1Name);
-                cmd.Parameters.AddWithValue("@Lecture2Name", se.Lecture2Name);
+                cmd.Parameters.AddWithValue("@FirstLectureName", se.FirstLectureName);
+                cmd.Parameters.AddWithValue("@SecondLectureName", se.SecondLectureName);
                 cmd.Parameters.AddWithValue("@Tag", se.Tag);
                 cmd.Parameters.AddWithValue("@StudentGroup", se.StudentGroup);
                 cmd.Parameters.AddWithValue("@StudentSubGroup", se.StudentSubGroup);
@@ -109,13 +109,13 @@ namespace ITPM_Project.Classes
             try
             {
                 //sql to update data in our database
-                string sql = "UPDATE Session SET Lecture1Name=@Lecture1Name, Lecture2Name=@Lecture2Name, Tag=@Tag, StudentGroup=@StudentGroup, StudentSubGroup=@StudentSubGroup, Subject=@Subject, Duration=@Duration, NoOfStudents=@NoOfStudents WHERE SessionID=@SessionID";
+                string sql = "UPDATE Session SET FirstLectureName=@FirstLectureName, SecondLectureName=@SecondLectureName, Tag=@Tag, StudentGroup=@StudentGroup, StudentSubGroup=@StudentSubGroup, Subject=@Subject, Duration=@Duration, NoOfStudents=@NoOfStudents WHERE SessionID=@SessionID";
                 //create sql commend
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //create parameters to add values
                 cmd.Parameters.AddWithValue("@SessionID", se.SessionID);
-                cmd.Parameters.AddWithValue("@Lecture1Name", se.Lecture1Name);
-                cmd.Parameters.AddWithValue("@Lecture2Name", se.Lecture2Name);
+                cmd.Parameters.AddWithValue("@FirstLectureName", se.FirstLectureName);
+                cmd.Parameters.AddWithValue("@SecondLectureName", se.SecondLectureName);
                 cmd.Parameters.AddWithValue("@Tag", se.Tag);
                 cmd.Parameters.AddWithValue("@StudentGroup", se.StudentGroup);
                 cmd.Parameters.AddWithValue("@StudentSubGroup", se.StudentSubGroup);

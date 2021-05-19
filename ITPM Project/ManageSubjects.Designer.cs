@@ -148,7 +148,7 @@ namespace ITPM_Project
             // 
             // dataGridViewSubjects
             // 
-            this.dataGridViewSubjects.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridViewSubjects.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSubjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridViewSubjects.Location = new System.Drawing.Point(34, 225);

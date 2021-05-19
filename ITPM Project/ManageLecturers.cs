@@ -92,9 +92,14 @@ namespace ITPM_Project
             Boolean rankGenResult = rankGen();
 
             //..................Validations.............................
+            //Lecture ID Text Box
+            if (textBoxLectureID.Text == "")
+                MessageBox.Show("Please Fill Lecturer ID...!");
+            else if (System.Text.RegularExpressions.Regex.IsMatch(textBoxLectureID.Text, "[^0-9]"))
+                MessageBox.Show("Please Enter Number Only For Lecturer ID...!");
 
             //Title Combo Box
-            if (comboBoxTitle.Text == "")
+            else if (comboBoxTitle.Text == "")
                 MessageBox.Show("Please Fill Lecturer Title...!");
 
             //Lecture First Name Text Box
