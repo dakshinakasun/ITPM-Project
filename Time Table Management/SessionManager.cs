@@ -14,9 +14,14 @@ namespace Time_Table_Management
 {
     public partial class SessionManager : Form
     {
+        private object se;
+
         public SessionManager()
         {
             InitializeComponent();
+            LecFillCombo();
+            GroupFillCombo();
+        
        
         }
 
@@ -63,36 +68,116 @@ namespace Time_Table_Management
 
         }
 
+        void LecFillCombo()
+        {
+            string myconnstring = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+            string sql = "select * from Lecturer";
+            SqlConnection conn = new SqlConnection(myconnstring);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader LecReader;
+
+            try
+            {
+                conn.Open();
+                LecReader = cmd.ExecuteReader();
+
+                while (LecReader.Read())
+                {
+                    // Load Lecturers first names and last names to combobox
+                    string title = LecReader["Title"].ToString();
+                    string fname = LecReader["FirstName"].ToString();
+                    string lname = LecReader["LastName"].ToString();
+                    comboBox1.Items.Add(title + " " + fname + " " + lname);
+                   // comboBoxLecturer2.Items.Add(title + " " + fname + " " + lname);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+        void GroupFillCombo()
+        {
+            string myconnstring = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+            string sql = "select * from tbl_studentg";
+            SqlConnection conn = new SqlConnection(myconnstring);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader LecReader;
+
+            try
+            {
+                conn.Open();
+                LecReader = cmd.ExecuteReader();
+
+                while (LecReader.Read())
+                {
+                    // Load Lecturers first names and last names to combobox
+                    string gid = LecReader["GroupID"].ToString();
+                    string sgid = LecReader["SubGroupID"].ToString();
+                  
+                    groupDrop.Items.Add(gid);
+                    subDrop.Items.Add(sgid);
+                    // comboBoxLecturer2.Items.Add(title + " " + fname + " " + lname);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+
+
         private void submitBtn_Click(object sender, EventArgs e)
         {
-            string conn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
 
-            string query = "INSERT INTO SessionTable (LectureName,SelectedGroup,SubGroup,TimeFrom,TimeTo) VALUES (@ln,@sg,@sgr,@tf,@tt)";
-            SqlConnection connection = new SqlConnection(conn);
-            connection.Open();
+
             
-            SqlCommand cmd = new SqlCommand(query, connection);
 
-            cmd.Parameters.AddWithValue("@ln", lecText.Text );
-            cmd.Parameters.AddWithValue("@sg", groupDrop.Text);
-            cmd.Parameters.AddWithValue("@sgr", subDrop.Text);
+
+
+            string conn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+            string query = "INSERT INTO SessionTable (Lecture,SelectedGroup,SubGroup,TimeFrom,TimeTo) VALUES (@lc,@sg,@sug,@tf,@tt)";
+           
+            SqlConnection connection = new SqlConnection(conn);
+            connection.Open(); 
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@lc", comboBox1.SelectedItem.ToString());
+            cmd.Parameters.AddWithValue("@sg", groupDrop.SelectedItem.ToString());
+            cmd.Parameters.AddWithValue("@sug", subDrop.SelectedItem.ToString());
             cmd.Parameters.AddWithValue("@tf", dateTimeFromPicker.Value.ToString().Split(' ')[1] + " " + dateTimeFromPicker.Value.ToString().Split(' ')[2]);
             cmd.Parameters.AddWithValue("@tt", dateTimeToPicker.Value.ToString().Split(' ')[1] + " " + dateTimeToPicker.Value.ToString().Split(' ')[2]);
-
             cmd.ExecuteNonQuery();
-
             connection.Close();
+
+
+
+
             RefreshData();
 
             MessageBox.Show("Session Added Successfully");
-            lecText.Text = "";
+            //lecText.Text = "";
+            comboBox1.SelectedItem = null;
             subDrop.SelectedItem = null;
             groupDrop.SelectedItem = null;
         }
 
         private void clearBtn_Click(object sender, EventArgs e)
         {
-            lecText.Text = "";
+            comboBox1.SelectedItem = null;
             subDrop.SelectedItem = null;
             groupDrop.SelectedItem = null;
         }
@@ -108,7 +193,7 @@ namespace Time_Table_Management
 
                 string conn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
 
-                string query = "DELETE FROM SessionTable WHERE SessionId=@id;";
+                string query = "DELETE FROM SessionTable WHERE ID=@id;";
                 SqlConnection connection = new SqlConnection(conn);
                 connection.Open();
 
@@ -135,7 +220,7 @@ namespace Time_Table_Management
             {
                 string conn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
 
-                string query = "SELECT * FROM SessionTable WHERE SessionId=" + Int32.Parse(idTxt.Text.ToString()) + ";";
+                string query = "SELECT * FROM SessionTable WHERE ID=" + Int32.Parse(idTxt.Text.ToString()) + ";";
 
 
                 SqlConnection connection = new SqlConnection(conn);
@@ -148,7 +233,7 @@ namespace Time_Table_Management
                 {
                     if (dr.Read())
                     {
-                        String lecname = dr["LectureName"].ToString();
+                        String lecname = dr["Lecture"].ToString();
                         String group = dr["SelectedGroup"].ToString();
                         String subgroup = dr["SubGroup"].ToString();
                         String timefrom = dr["TimeFrom"].ToString();
@@ -175,6 +260,16 @@ namespace Time_Table_Management
 
             }
 
+
+        }
+
+        private void lecText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupDrop_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

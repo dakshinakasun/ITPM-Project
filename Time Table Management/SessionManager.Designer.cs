@@ -38,7 +38,6 @@ namespace Time_Table_Management
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimeToPicker = new System.Windows.Forms.DateTimePicker();
             this.dateTimeFromPicker = new System.Windows.Forms.DateTimePicker();
-            this.lecText = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.clearBtn = new System.Windows.Forms.Button();
@@ -50,6 +49,7 @@ namespace Time_Table_Management
             this.button2 = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -87,32 +87,15 @@ namespace Time_Table_Management
             // groupDrop
             // 
             this.groupDrop.FormattingEnabled = true;
-            this.groupDrop.Items.AddRange(new object[] {
-            "Y1S1G1",
-            "Y2S1G1",
-            "Y3S1G1",
-            "Y4S1G1"});
-            this.groupDrop.Location = new System.Drawing.Point(250, 152);
+            this.groupDrop.Location = new System.Drawing.Point(250, 156);
             this.groupDrop.Name = "groupDrop";
             this.groupDrop.Size = new System.Drawing.Size(206, 36);
             this.groupDrop.TabIndex = 8;
+            this.groupDrop.SelectedIndexChanged += new System.EventHandler(this.groupDrop_SelectedIndexChanged);
             // 
             // subDrop
             // 
             this.subDrop.FormattingEnabled = true;
-            this.subDrop.Items.AddRange(new object[] {
-            "Y1S1 G1.1",
-            "Y1S1 G1.2",
-            "Y1S1 G1.3",
-            "Y2S1 G1.1",
-            "Y2S1 G1.2",
-            "Y2S1 G1.3",
-            "Y3S1 G1.1",
-            "Y3S1 G1.2",
-            "Y3S1 G1.3",
-            "Y4S1 G1.1",
-            "Y4S1 G1.2",
-            "Y4S1 G1.3"});
             this.subDrop.Location = new System.Drawing.Point(250, 247);
             this.subDrop.Name = "subDrop";
             this.subDrop.Size = new System.Drawing.Size(206, 36);
@@ -161,14 +144,6 @@ namespace Time_Table_Management
             this.dateTimeFromPicker.Size = new System.Drawing.Size(182, 30);
             this.dateTimeFromPicker.TabIndex = 44;
             // 
-            // lecText
-            // 
-            this.lecText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lecText.Location = new System.Drawing.Point(250, 77);
-            this.lecText.Name = "lecText";
-            this.lecText.Size = new System.Drawing.Size(206, 30);
-            this.lecText.TabIndex = 48;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -182,9 +157,9 @@ namespace Time_Table_Management
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.clearBtn);
             this.tabPage1.Controls.Add(this.submitBtn);
-            this.tabPage1.Controls.Add(this.lecText);
             this.tabPage1.Controls.Add(this.dateTimeFromPicker);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label2);
@@ -332,6 +307,14 @@ namespace Time_Table_Management
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(250, 77);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(206, 36);
+            this.comboBox1.TabIndex = 51;
+            // 
             // SessionManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -363,7 +346,6 @@ namespace Time_Table_Management
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimeToPicker;
         private System.Windows.Forms.DateTimePicker dateTimeFromPicker;
-        private System.Windows.Forms.TextBox lecText;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -375,5 +357,6 @@ namespace Time_Table_Management
         private System.Windows.Forms.TextBox idTxt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

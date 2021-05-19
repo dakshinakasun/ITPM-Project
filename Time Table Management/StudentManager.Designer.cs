@@ -185,11 +185,6 @@ namespace Time_Table_Management
             // groupDrop
             // 
             this.groupDrop.FormattingEnabled = true;
-            this.groupDrop.Items.AddRange(new object[] {
-            "Y1S1G1",
-            "Y2S1G1",
-            "Y3S1G1",
-            "Y4S1G1"});
             this.groupDrop.Location = new System.Drawing.Point(247, 72);
             this.groupDrop.Name = "groupDrop";
             this.groupDrop.Size = new System.Drawing.Size(206, 36);
@@ -198,19 +193,6 @@ namespace Time_Table_Management
             // subDrop
             // 
             this.subDrop.FormattingEnabled = true;
-            this.subDrop.Items.AddRange(new object[] {
-            "Y1S1 G1.1",
-            "Y1S1 G1.2",
-            "Y1S1 G1.3",
-            "Y2S1 G1.1",
-            "Y2S1 G1.2",
-            "Y2S1 G1.3",
-            "Y3S1 G1.1",
-            "Y3S1 G1.2",
-            "Y3S1 G1.3",
-            "Y4S1 G1.1",
-            "Y4S1 G1.2",
-            "Y4S1 G1.3"});
             this.subDrop.Location = new System.Drawing.Point(247, 142);
             this.subDrop.Name = "subDrop";
             this.subDrop.Size = new System.Drawing.Size(206, 36);

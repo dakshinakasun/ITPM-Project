@@ -22,7 +22,46 @@ namespace Time_Table_Management
         private void StudentManager_Load(object sender, EventArgs e)
         {
             RefreshData();
+            GroupFillCombo();
         }
+
+        void GroupFillCombo()
+        {
+            string myconnstring = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+            string sql = "select * from tbl_studentg";
+            SqlConnection conn = new SqlConnection(myconnstring);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader LecReader;
+
+            try
+            {
+                conn.Open();
+                LecReader = cmd.ExecuteReader();
+
+                while (LecReader.Read())
+                {
+                    // Load Lecturers first names and last names to combobox
+                    string gid = LecReader["GroupID"].ToString();
+                    string sgid = LecReader["SubGroupID"].ToString();
+
+                    groupDrop.Items.Add(gid);
+                    subDrop.Items.Add(sgid);
+                    // comboBoxLecturer2.Items.Add(title + " " + fname + " " + lname);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+
         private void RefreshData()
         {
             string conn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
@@ -48,15 +87,13 @@ namespace Time_Table_Management
         {
             string conn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
 
-            string query = "INSERT INTO StudentGroupsTable (StudentGroup,SubGroup,TimeFrom,TimeTo) VALUES (@sg,@sgr,@tf,@tt)";
+            string query = "INSERT INTO StudentGroupsTable (StudentGroup,SubGroup,TimeFrom,TimeTo) VALUES (@sg,@sug,@tf,@tt)";
             SqlConnection connection = new SqlConnection(conn);
             connection.Open();
 
             SqlCommand cmd = new SqlCommand(query, connection);
-
-            
-            cmd.Parameters.AddWithValue("@sg", groupDrop.Text);
-            cmd.Parameters.AddWithValue("@sgr", subDrop.Text);
+            cmd.Parameters.AddWithValue("@sg", groupDrop.SelectedItem.ToString());
+            cmd.Parameters.AddWithValue("@sug", subDrop.SelectedItem.ToString());
             cmd.Parameters.AddWithValue("@tf", dateTimeFromPicker.Value.ToString().Split(' ')[1] + " " + dateTimeFromPicker.Value.ToString().Split(' ')[2]);
             cmd.Parameters.AddWithValue("@tt", dateTimeToPicker.Value.ToString().Split(' ')[1] + " " + dateTimeToPicker.Value.ToString().Split(' ')[2]);
 
