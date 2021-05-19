@@ -11,40 +11,45 @@ using System.Windows.Forms;
 
 namespace StudentAndTagProject
 {
-    public partial class AddStudentGroup : Form
+    public partial class addparallel : Form
     {
-        public AddStudentGroup()
+        public addparallel()
         {
             InitializeComponent();
         }
 
-        StudentClass s = new StudentClass();
+        ParallelClass p = new ParallelClass();
 
         public void Clear()
         {
 
-            comboAcademic.SelectedIndex = -1;
-            textBoxGroupID.Text = "";
-            textBoxSubGroupID.Text = "";
-            comboBoxProgram.SelectedIndex = -1;
-            numericUpDownGroupNumber.Value = 0;
-            numericUpDownSubGroupNumber.Value = 0;
+            numericP.Value = 0;
+            cmdPsub.SelectedIndex = -1;
+            cmbPtag.SelectedIndex = -1;
+            cmdPgroup.SelectedIndex = -1;
 
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void addparallel_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'iTPMDataSet10.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter.Fill(this.iTPMDataSet10.Session);
+
+        }
+
+        private void btnPsave_Click(object sender, EventArgs e)
         {
             //get the value from the inpute fileds
-            s.AcademicYearAndSemester = comboAcademic.Text;
-            s.Programme = comboBoxProgram.Text;
-            s.GroupNo = Convert.ToInt32(numericUpDownGroupNumber.Text);
-            s.SubGroupNo = Convert.ToInt32(numericUpDownSubGroupNumber.Text);
-            s.GroupID = textBoxGroupID.Text;
-            s.SubGroupID = textBoxSubGroupID.Text;
+            p.SessionID = Convert.ToInt32(numericP.Text);
+            p.Subject = cmdPsub.Text;
+            p.Tag = cmbPtag.Text;
+            p.GroupID = cmdPgroup.Text;
+
+
 
 
             //Insert data into data using the method we created
-            bool success = s.Insert(s);
+            bool success = p.Insert(p);
             if (success == true)
             {
                 //successfuly inserted
@@ -59,17 +64,17 @@ namespace StudentAndTagProject
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnPclear_Click(object sender, EventArgs e)
         {
             //call clear method
             Clear();
         }
 
-        private void btnss_Click(object sender, EventArgs e)
+        private void btnn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            concutive f3 = new concutive();
-            f3.Show();
+            nonoverlapping f6 = new nonoverlapping();
+            f6.Show();
         }
     }
 }

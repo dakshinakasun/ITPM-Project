@@ -48,6 +48,7 @@ namespace StudentAndTagProject
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnss = new System.Windows.Forms.Button();
             this.panelHedding.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGroupNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSubGroupNumber)).BeginInit();
@@ -281,12 +282,23 @@ namespace StudentAndTagProject
             this.label4.Text = "Sub Group ID should be selected Academic Year  Semester with\r\nGroup Number and Su" +
     "b Group Numbe\r\nEX:- Y1S1.2.1";
             // 
+            // btnss
+            // 
+            this.btnss.Location = new System.Drawing.Point(1005, 77);
+            this.btnss.Name = "btnss";
+            this.btnss.Size = new System.Drawing.Size(75, 23);
+            this.btnss.TabIndex = 20;
+            this.btnss.Text = "button1";
+            this.btnss.UseVisualStyleBackColor = true;
+            this.btnss.Click += new System.EventHandler(this.btnss_Click);
+            // 
             // AddStudentGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1112, 509);
+            this.Controls.Add(this.btnss);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -337,6 +349,7 @@ namespace StudentAndTagProject
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnss;
     }
 }
 

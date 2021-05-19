@@ -48,6 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addparallel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addparallel.Designer.cs">
+      <DependentUpon>addparallel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\consecutiveClass.cs" />
+    <Compile Include="Classes\nonoverlappingClass.cs" />
+    <Compile Include="Classes\ParallelClass.cs" />
     <Compile Include="Classes\StudentClass.cs" />
     <Compile Include="AddStudentGroup.cs">
       <SubType>Form</SubType>
@@ -56,11 +65,89 @@
       <DependentUpon>AddStudentGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\StudentTag.cs" />
+    <Compile Include="concutive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="concutive.Designer.cs">
+      <DependentUpon>concutive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="concutiveClass.cs" />
+    <Compile Include="conView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conView.Designer.cs">
+      <DependentUpon>conView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ITPMDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ITPMDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="ManageStudentGroup.cs">
       <SubType>Form</SubType>
@@ -74,10 +161,49 @@
     <Compile Include="ManageTag.Designer.cs">
       <DependentUpon>ManageTag.cs</DependentUpon>
     </Compile>
+    <Compile Include="nonoverlapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nonoverlapping.Designer.cs">
+      <DependentUpon>nonoverlapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonoverlappingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NonoverlappingView.Designer.cs">
+      <DependentUpon>NonoverlappingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parallel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parallel.Designer.cs">
+      <DependentUpon>parallel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parallelViewcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parallelViewcs.Designer.cs">
+      <DependentUpon>parallelViewcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session.Designer.cs">
+      <DependentUpon>session.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addparallel.resx">
+      <DependentUpon>addparallel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudentGroup.resx">
       <DependentUpon>AddStudentGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="concutive.resx">
+      <DependentUpon>concutive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conView.resx">
+      <DependentUpon>conView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -88,6 +214,18 @@
     <EmbeddedResource Include="ManageTag.resx">
       <DependentUpon>ManageTag.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nonoverlapping.resx">
+      <DependentUpon>nonoverlapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NonoverlappingView.resx">
+      <DependentUpon>NonoverlappingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parallel.resx">
+      <DependentUpon>parallel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parallelViewcs.resx">
+      <DependentUpon>parallelViewcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -97,6 +235,152 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="session.resx">
+      <DependentUpon>session.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ITPMDataSet.xsc">
+      <DependentUpon>ITPMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet.xss">
+      <DependentUpon>ITPMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet1.xsc">
+      <DependentUpon>ITPMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet1.xss">
+      <DependentUpon>ITPMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet10.xsc">
+      <DependentUpon>ITPMDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet10.xss">
+      <DependentUpon>ITPMDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet11.xsc">
+      <DependentUpon>ITPMDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet11.xss">
+      <DependentUpon>ITPMDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet12.xsc">
+      <DependentUpon>ITPMDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet12.xss">
+      <DependentUpon>ITPMDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet2.xsc">
+      <DependentUpon>ITPMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet2.xss">
+      <DependentUpon>ITPMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet3.xsc">
+      <DependentUpon>ITPMDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet3.xss">
+      <DependentUpon>ITPMDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet4.xsc">
+      <DependentUpon>ITPMDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet4.xss">
+      <DependentUpon>ITPMDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet5.xsc">
+      <DependentUpon>ITPMDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet5.xss">
+      <DependentUpon>ITPMDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet6.xsc">
+      <DependentUpon>ITPMDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet6.xss">
+      <DependentUpon>ITPMDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet7.xsc">
+      <DependentUpon>ITPMDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet7.xss">
+      <DependentUpon>ITPMDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet8.xsc">
+      <DependentUpon>ITPMDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet8.xss">
+      <DependentUpon>ITPMDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet9.xsc">
+      <DependentUpon>ITPMDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ITPMDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ITPMDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ITPMDataSet9.xss">
+      <DependentUpon>ITPMDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
